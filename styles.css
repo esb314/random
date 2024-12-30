@@ -1,0 +1,54 @@
+/* 모든 요소 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 전체 화면을 가득 채우는 설정 */
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* 게임 화면 */
+#game-container {
+    width: 600px;
+    height: 400px;
+    background-color: #333;
+    position: relative;
+    border: 3px solid #fff;
+}
+
+/* 등장하는 사람들 */
+.character {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+/* 숨은 사람 */
+#hider {
+    background-color: #ff6347;
+}
+
+/* 찾는 사람 */
+#seeker {
+    background-color: #1e90ff;
+}
+
+/* 메시지 박스 */
+#message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: #fff;
+}
